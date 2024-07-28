@@ -1,0 +1,97 @@
+
+body{
+    background-color: #212121;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    color: white;
+    font-family: sans-serif;
+  }
+  
+  .app-header {
+    padding: 20px;
+    color: #9B9B9B;
+    text-align: center;
+  }
+  
+  .message-list {
+    flex: 1;
+    padding: 30px;
+    height: 400px;
+    overflow-y: auto;
+
+  }
+  
+  .message {
+    margin: 5px 0;
+    width: 100%;
+  }
+  
+  .message.user {
+    display: flex;
+    justify-content: end;
+  }
+
+  .message.user p{
+    line-height: 20px;
+    padding: 20px;
+    text-align: justify;
+    border-radius:50px;
+    background-color: #2F2F2F;
+    max-width: 50vw;
+  }
+  
+  .message.bot {
+    display: flex;
+    justify-content: start;
+  }
+
+  .message.bot p{
+    line-height: 20px;
+    text-align: justify;
+    max-width: 90vw;
+  }
+
+  
+  .message-input {
+    display: flex;
+
+    padding: 10px;
+    padding-bottom: 30px;
+  }
+  
+  .message-input input {
+    flex: 1;
+    padding: 10px;
+    border: 5px solid #2F2F2F;
+    background-color: #2F2F2F;
+    border-radius: 50px;
+    color: white;
+    padding-left: 20px ;
+    margin-right: 10px;
+  }
+
+
+  .message-input input:focus {
+    border: 5px solid #2F2F2F;
+    background-color: #2F2F2F;
+    outline: none; /* Ensure outline is removed on focus */
+  }
+  
+  .message-input button {
+    padding: 10px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 50px;
+  }
+  
+  .message-input button:hover {
+    background-color: #aaa;
+  }
+  
